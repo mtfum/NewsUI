@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "NewsAPI",
+        "repositoryURL": "https://github.com/mtfum/NewsAPI.git",
+        "state": {
+          "branch": null,
+          "revision": "cc385bc98173304acf10840d692411404449a87d",
+          "version": "0.1.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
