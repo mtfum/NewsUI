@@ -18,9 +18,6 @@
 		26D5E3ED26AC89AF00E9D90F /* NewsUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D5E3EC26AC89AF00E9D90F /* NewsUIApp.swift */; };
 		26D5E3F126AC89B000E9D90F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26D5E3F026AC89B000E9D90F /* Assets.xcassets */; };
 		26D5E3F426AC89B000E9D90F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26D5E3F326AC89B000E9D90F /* Preview Assets.xcassets */; };
-		26D5E3FC26AC89F200E9D90F /* HeadlinesFeature in Frameworks */ = {isa = PBXBuildFile; productRef = 26D5E3FB26AC89F200E9D90F /* HeadlinesFeature */; };
-		26D5E3FE26AC89F200E9D90F /* SearchFeature in Frameworks */ = {isa = PBXBuildFile; productRef = 26D5E3FD26AC89F200E9D90F /* SearchFeature */; };
-		26D5E40026AC89F200E9D90F /* SourcesFeature in Frameworks */ = {isa = PBXBuildFile; productRef = 26D5E3FF26AC89F200E9D90F /* SourcesFeature */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,9 +72,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26D5E3FC26AC89F200E9D90F /* HeadlinesFeature in Frameworks */,
-				26D5E40026AC89F200E9D90F /* SourcesFeature in Frameworks */,
-				26D5E3FE26AC89F200E9D90F /* SearchFeature in Frameworks */,
 				26095BF926AC8EB700366ADD /* AppFeature in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -178,9 +172,6 @@
 			);
 			name = NewsUIApp;
 			packageProductDependencies = (
-				26D5E3FB26AC89F200E9D90F /* HeadlinesFeature */,
-				26D5E3FD26AC89F200E9D90F /* SearchFeature */,
-				26D5E3FF26AC89F200E9D90F /* SourcesFeature */,
 				26095BF826AC8EB700366ADD /* AppFeature */,
 			);
 			productName = NewsUIApp;
@@ -214,6 +205,8 @@
 				Base,
 			);
 			mainGroup = 26D5E3E026AC89AF00E9D90F;
+			packageReferences = (
+			);
 			productRefGroup = 26D5E3EA26AC89AF00E9D90F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -542,18 +535,6 @@
 		26095BF826AC8EB700366ADD /* AppFeature */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = AppFeature;
-		};
-		26D5E3FB26AC89F200E9D90F /* HeadlinesFeature */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = HeadlinesFeature;
-		};
-		26D5E3FD26AC89F200E9D90F /* SearchFeature */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = SearchFeature;
-		};
-		26D5E3FF26AC89F200E9D90F /* SourcesFeature */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = SourcesFeature;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

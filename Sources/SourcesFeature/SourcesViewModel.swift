@@ -1,5 +1,5 @@
-import NewsClient
 import SwiftUI
+import NewsClient
 
 @MainActor
 final class SourcesViewModel: ObservableObject {

@@ -2,7 +2,7 @@ import SwiftUI
 import NewsAPI
 
 public struct ArticleView: View {
-  public let article: NewsArticle
+  private let article: NewsArticle
 
   public init(article: NewsArticle) {
     self.article = article
@@ -10,6 +10,8 @@ public struct ArticleView: View {
 
   public var body: some View {
     HStack {
+      Text(article.title ?? "")
+        .fontWeight(.bold)
       AsyncImage(url: article.urlToImage) { phase in
         switch phase {
         case .empty:
@@ -30,8 +32,6 @@ public struct ArticleView: View {
           EmptyView()
         }
       }
-      Text(article.title ?? "")
-        .fontWeight(.bold)
     }
   }
 }

@@ -1,5 +1,5 @@
 import SwiftUI
-import NewsAPI
+import NewsClient
 
 struct SourceView: View {
   let source: NewsSource

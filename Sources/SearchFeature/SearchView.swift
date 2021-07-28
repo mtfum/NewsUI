@@ -9,8 +9,8 @@ import SwiftUI
 import AppComponent
 
 public struct SearchView: View {
-  @StateObject var viewModel = SearchViewModel()
-  @State var query = ""
+  @StateObject private var viewModel = SearchViewModel()
+  @State private var query = ""
 
   public init() {}
 
@@ -26,9 +26,10 @@ public struct SearchView: View {
       .listStyle(.plain)
       .navigationTitle("Search")
     }
-    .searchable(text: $query)
-    .onChange(of: query) { query in
-      // TODO: AsyncStream
+    .searchable(text: $query, suggestions: {
+      ForEach(viewModel.histories, id: \.self) { Text($0).searchCompletion($0) }
+    })
+    .onSubmit(of: .search) {
       Task {
         await viewModel.search(text: query)
       }

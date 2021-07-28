@@ -15,13 +15,14 @@ let package = Package(
     .library(name: "SourcesFeature", targets: ["SourcesFeature"])
   ],
   dependencies: [
-    .package(url: "https://github.com/mtfum/NewsAPI.git", from: "0.1.0")
+    .package(url: "https://github.com/mtfum/NewsAPI.git", from: "0.1.0"),
+    .package(url: "https://github.com/apple/swift-collections.git", from: "0.0.1"),
   ],
   targets: [
     .target(name: "AppComponent", dependencies: ["NewsAPI"]),
     .target(name: "AppFeature", dependencies: ["SearchFeature", "HeadlinesFeature", "SourcesFeature"]),
     .target(name: "NewsClient", dependencies: ["NewsAPI"]),
-    .target(name: "SearchFeature", dependencies: ["AppComponent", "NewsClient"]),
+    .target(name: "SearchFeature", dependencies: ["AppComponent", "NewsClient", .product(name: "OrderedCollections", package: "swift-collections")]),
     .target(name: "HeadlinesFeature", dependencies: ["AppComponent", "NewsClient"]),
     .target(name: "SourcesFeature", dependencies: ["AppComponent", "NewsClient"])
   ]

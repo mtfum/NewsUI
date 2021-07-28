@@ -10,7 +10,7 @@ import AppComponent
 
 public struct SourcesView: View {
 
-  @StateObject var viewModel = SourcesViewModel()
+  @StateObject private var viewModel = SourcesViewModel()
 
   public init() {}
 
