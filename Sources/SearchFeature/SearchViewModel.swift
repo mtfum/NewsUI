@@ -7,7 +7,8 @@ private let searchHistoryKey = "searchHistory"
 @MainActor
 final class SearchViewModel: ObservableObject {
 
-  @Published var results: [NewsArticle] = []
+  @Published private(set) var results: [NewsArticle] = []
+
   var histories: [String] {
     return UserDefaults.standard.object(forKey: searchHistoryKey) as? [String] ?? []
   }

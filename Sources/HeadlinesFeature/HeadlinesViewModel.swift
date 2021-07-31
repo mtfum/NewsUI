@@ -3,7 +3,8 @@ import NewsClient
 
 @MainActor
 final class HeadlinesViewModel: ObservableObject {
-  @Published var articles: [NewsArticle] = []
+
+  @Published private(set) var articles: [NewsArticle] = []
 
   func getArticles() throws {
     Task.init(priority: .default) {
