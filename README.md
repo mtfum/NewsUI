@@ -22,9 +22,14 @@ The codebase uses following modern keys:
 
 - `git clone https://github.com/mtfum/NewsUI`
 - cd NewsUI
-- insert `YOUR_NEWS_API_KEY` in `NewsClient.swift` // you can get from https://newsapi.org/
+- insert `YOUR_NEWS_API_KEY` in `NewsClient.swift`, you can get from https://newsapi.org/
 - Build SwiftUIApp
 - Enjoy! 🎉
+
+## Libraries
+
+- [NewsAPI](https://github.com/mtfum/NewsAPI)
+- [SwiftCollections](https://github.com/apple/swift-collections) 
 
 
 ## Architecture
