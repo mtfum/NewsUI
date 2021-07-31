@@ -25,7 +25,7 @@ final class SearchViewModel: ObservableObject {
 
   private func addHistory(_ query: String) {
     var histories = OrderedSet<String>(histories)
-    histories.append(query)
+    histories.insert(query, at: 0)
     UserDefaults.standard.set(histories.elements, forKey: searchHistoryKey)
   }
 }

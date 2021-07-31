@@ -4,7 +4,7 @@ import NewsClient
 @MainActor
 final class SourcesViewModel: ObservableObject {
 
-  @Published var sources: [NewsSource] = []
+  @Published private(set) var sources: [NewsSource] = []
 
   func fetchSources() {
     Task {
