@@ -1,6 +1,6 @@
 @_exported import NewsAPI
 
-private let API_KEY = "f32c792c14fc4e90a859cde979d06673"
+private let API_KEY = "YOUR_NEWS_API_KEY"
 
 public class NewsClient {
 

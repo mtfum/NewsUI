@@ -12,8 +12,6 @@ The codebase uses following modern keys:
 
 - Get Headlines 
 - Search News
-- Save Favorite News
-- Widget
 
 ## Requirements
 
@@ -24,7 +22,7 @@ The codebase uses following modern keys:
 
 - `git clone https://github.com/mtfum/NewsUI`
 - cd NewsUI
-- insert 'YOUR_NEWS_API_API_KEY' in `NewsClient.swift`
+- insert `YOUR_NEWS_API_KEY` in `NewsClient.swift` // you can get from https://newsapi.org/
 - Build SwiftUIApp
 - Enjoy! 🎉
 
@@ -32,6 +30,6 @@ The codebase uses following modern keys:
 ## Architecture
 
 
-## Test
+![Architecture](./images/ArchitectureImage.jpg)
 
 

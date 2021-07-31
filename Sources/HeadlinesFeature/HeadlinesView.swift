@@ -21,7 +21,6 @@ public struct HeadlinesView: View {
         Text(errorMessage)
           .fontWeight(.bold)
       } else {
-
         List(viewModel.articles) { article in
           NavigationLink(
             destination: {
